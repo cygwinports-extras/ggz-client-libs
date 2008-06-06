@@ -1,0 +1,35 @@
+diff -urN -x CYGWIN-PATCHES -x 'aclocal.m4~' -x aclocal.m4t -x autom4te.cache -x config.cache -x config.log -x config.status -x config.h -x '*config.h.in' -x ABOUT-NLS -x Makefile.in.in -x Makevars.template -x '*SlackBuild*' -x '*.egg-info' -x '*.class' -x '*.pyc' -x '*.mo' -x '*.gmo' -x '*.orig' -x '*.rej' -x '*.spec' -x '*.temp' -x '*~' -x '*.stackdump' -x COPYING -x INSTALL -x compile -x config-ml.in -x config.guess -x config.sub -x depcomp -x elisp-comp -x install-sh -x libtool.m4 -x ltoptions.m4 -x ltsugar.m4 -x ltversion.m4 -x 'lt~obsolete.m4' -x ltmain.sh -x mdate-sh -x missing -x mkinstalldirs -x py-compile -x symlink-tree -x texinfo.tex -x ylwrap -x config.rpath -x aclocal.m4 -x Makefile.in -x makefile.in -x configure -x omf.make -x xmldocs.make -x gnome-doc-utils.make -x gnome-doc-utils.m4 -x intltool.m4 -x intltool-extract -x intltool-extract.in -x intltool-merge -x intltool-merge.in -x intltool-update -x intltool-update.in -x config.rpath -x gettext.m4 -x gtk-2.0.m4 -x iconv.m4 origsrc/ggz-client-libs-0.0.14.1/ggzcore/Makefile.am src/ggz-client-libs-0.0.14.1/ggzcore/Makefile.am
+--- origsrc/ggz-client-libs-0.0.14.1/ggzcore/Makefile.am	2008-01-05 13:02:48.000000000 -0600
++++ src/ggz-client-libs-0.0.14.1/ggzcore/Makefile.am	2008-06-05 02:06:12.546875000 -0500
+@@ -18,7 +18,7 @@
+ libggzcore_la_LIBADD += $(LIB_GGZ)
+ endif
+ 
+-libggzcore_la_LDFLAGS = $(LIBGGZ_LDFLAGS) -version-info 9:0:0
++libggzcore_la_LDFLAGS = $(LIBGGZ_LDFLAGS) -version-info 9:0:0 -no-undefined
+ 
+ libggzcore_la_SOURCES =	conf.c \
+ 			conf.h \
+diff -urN -x CYGWIN-PATCHES -x 'aclocal.m4~' -x aclocal.m4t -x autom4te.cache -x config.cache -x config.log -x config.status -x config.h -x '*config.h.in' -x ABOUT-NLS -x Makefile.in.in -x Makevars.template -x '*SlackBuild*' -x '*.egg-info' -x '*.class' -x '*.pyc' -x '*.mo' -x '*.gmo' -x '*.orig' -x '*.rej' -x '*.spec' -x '*.temp' -x '*~' -x '*.stackdump' -x COPYING -x INSTALL -x compile -x config-ml.in -x config.guess -x config.sub -x depcomp -x elisp-comp -x install-sh -x libtool.m4 -x ltoptions.m4 -x ltsugar.m4 -x ltversion.m4 -x 'lt~obsolete.m4' -x ltmain.sh -x mdate-sh -x missing -x mkinstalldirs -x py-compile -x symlink-tree -x texinfo.tex -x ylwrap -x config.rpath -x aclocal.m4 -x Makefile.in -x makefile.in -x configure -x omf.make -x xmldocs.make -x gnome-doc-utils.make -x gnome-doc-utils.m4 -x intltool.m4 -x intltool-extract -x intltool-extract.in -x intltool-merge -x intltool-merge.in -x intltool-update -x intltool-update.in -x config.rpath -x gettext.m4 -x gtk-2.0.m4 -x iconv.m4 origsrc/ggz-client-libs-0.0.14.1/ggzcore/netxml.c src/ggz-client-libs-0.0.14.1/ggzcore/netxml.c
+--- origsrc/ggz-client-libs-0.0.14.1/ggzcore/netxml.c	2008-01-05 13:02:48.000000000 -0600
++++ src/ggz-client-libs-0.0.14.1/ggzcore/netxml.c	2008-06-05 02:06:12.562500000 -0500
+@@ -37,6 +37,7 @@
+ #include <strings.h>
+ #include <sys/stat.h>
+ #include <sys/types.h>
++#include <sys/time.h>
+ #include <unistd.h>
+ 
+ #ifdef HAVE_WINSOCK2_H
+diff -urN -x CYGWIN-PATCHES -x 'aclocal.m4~' -x aclocal.m4t -x autom4te.cache -x config.cache -x config.log -x config.status -x config.h -x '*config.h.in' -x ABOUT-NLS -x Makefile.in.in -x Makevars.template -x '*SlackBuild*' -x '*.egg-info' -x '*.class' -x '*.pyc' -x '*.mo' -x '*.gmo' -x '*.orig' -x '*.rej' -x '*.spec' -x '*.temp' -x '*~' -x '*.stackdump' -x COPYING -x INSTALL -x compile -x config-ml.in -x config.guess -x config.sub -x depcomp -x elisp-comp -x install-sh -x libtool.m4 -x ltoptions.m4 -x ltsugar.m4 -x ltversion.m4 -x 'lt~obsolete.m4' -x ltmain.sh -x mdate-sh -x missing -x mkinstalldirs -x py-compile -x symlink-tree -x texinfo.tex -x ylwrap -x config.rpath -x aclocal.m4 -x Makefile.in -x makefile.in -x configure -x omf.make -x xmldocs.make -x gnome-doc-utils.make -x gnome-doc-utils.m4 -x intltool.m4 -x intltool-extract -x intltool-extract.in -x intltool-merge -x intltool-merge.in -x intltool-update -x intltool-update.in -x config.rpath -x gettext.m4 -x gtk-2.0.m4 -x iconv.m4 origsrc/ggz-client-libs-0.0.14.1/ggzmod/Makefile.am src/ggz-client-libs-0.0.14.1/ggzmod/Makefile.am
+--- origsrc/ggz-client-libs-0.0.14.1/ggzmod/Makefile.am	2008-01-05 13:02:45.000000000 -0600
++++ src/ggz-client-libs-0.0.14.1/ggzmod/Makefile.am	2008-06-05 02:06:12.578125000 -0500
+@@ -14,7 +14,7 @@
+ libggzmod_la_LIBADD += $(LIB_GGZ)
+ endif
+ 
+-libggzmod_la_LDFLAGS = $(LIBGGZ_LDFLAGS) -version-info 5:0:1
++libggzmod_la_LDFLAGS = $(LIBGGZ_LDFLAGS) -version-info 5:0:1 -no-undefined
+ 
+ libggzmod_la_SOURCES = \
+ 	ggzmod.c \

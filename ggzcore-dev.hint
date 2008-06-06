@@ -1,0 +1,7 @@
+category: Games
+requires: cygwin libggzcore9 libexpat-devel libggz-devel gettext
+external-source: ggz-client-libs
+sdesc: "GGZ Gaming Zone core client library (development)"
+ldesc: "This packages contains two libraries for the C programming 
+language: ggzcore for GGZ core clients, and ggzmod for game clients. 
+Also, the tools ggz-config, ggz-wrapper and ggzwrap are included."
