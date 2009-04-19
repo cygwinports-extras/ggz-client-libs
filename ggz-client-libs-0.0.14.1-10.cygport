@@ -1,0 +1,12 @@
+inherit ggz
+
+PATCH_URI="0.0.14.1-no-undefined.patch"
+
+PKG_NAMES="${PN} libggzcore9 libggzcore-devel libggzmod4 libggzmod-devel"
+ggz_client_libs_CONTENTS="--exclude=man3 etc/ usr/bin/ggz* usr/lib/ggz/ usr/share/"
+libggzcore9_CONTENTS="usr/bin/cygggzcore-9.dll"
+libggzcore_devel_CONTENTS="usr/include/ggzcore.h usr/lib/libggzcore.*
+                           usr/share/man/man3/ggzcore_h.*"
+libggzmod4_CONTENTS="usr/bin/cygggzmod-4.dll"
+libggzmod_devel_CONTENTS="usr/include/ggzmod.h usr/lib/libggzmod.*
+                          usr/share/man/man3/ggzmod_h.*"

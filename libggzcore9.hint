@@ -1,6 +1,7 @@
 category: Games
-requires: cygwin libggz2 libggzcore9 libggzmod4 libintl8
-sdesc: "GGZ Gaming Zone core utilities and wrappers"
+requires: cygwin libexpat1 libgcc1 libggz2 libintl8
+external-source: ggz-client-libs
+sdesc: "GGZ Gaming Zone core client library (runtime)"
 ldesc: "This packages contains two libraries for the C programming 
 language: ggzcore for GGZ core clients, and ggzmod for game clients. 
 Also, the tools ggz-config, ggz-wrapper and ggzwrap are included."

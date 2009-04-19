@@ -9,16 +9,6 @@
  
  libggzcore_la_SOURCES =	conf.c \
  			conf.h \
---- origsrc/ggz-client-libs-0.0.14.1/ggzcore/netxml.c	2008-01-05 13:02:48.000000000 -0600
-+++ src/ggz-client-libs-0.0.14.1/ggzcore/netxml.c	2008-06-05 02:06:12.562500000 -0500
-@@ -37,6 +37,7 @@
- #include <strings.h>
- #include <sys/stat.h>
- #include <sys/types.h>
-+#include <sys/time.h>
- #include <unistd.h>
- 
- #ifdef HAVE_WINSOCK2_H
 --- origsrc/ggz-client-libs-0.0.14.1/ggzmod/Makefile.am	2008-01-05 13:02:45.000000000 -0600
 +++ src/ggz-client-libs-0.0.14.1/ggzmod/Makefile.am	2008-06-05 02:06:12.578125000 -0500
 @@ -14,7 +14,7 @@
