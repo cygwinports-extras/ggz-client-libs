@@ -1,5 +1,5 @@
 category: Games
-requires: cygwin libggzmod4 libggz-devel libggzcore-devel
+requires: libggzmod4 libggz-devel libggzcore-devel
 external-source: ggz-client-libs
 sdesc: "GGZ Gaming Zone game client library (development)"
 ldesc: "This packages contains two libraries for the C programming 

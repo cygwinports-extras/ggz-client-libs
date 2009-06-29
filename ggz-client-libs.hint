@@ -1,5 +1,5 @@
 category: Games
-requires: cygwin bash libgcc1 libggz2 libggzcore9 libggzmod4 libintl8
+requires: bash libgcc1 libggz2 libggzcore9 libggzmod4 libintl8
 sdesc: "GGZ Gaming Zone core utilities and wrappers"
 ldesc: "This packages contains two libraries for the C programming 
 language: ggzcore for GGZ core clients, and ggzmod for game clients. 

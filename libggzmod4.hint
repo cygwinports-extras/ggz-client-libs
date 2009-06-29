@@ -1,5 +1,5 @@
 category: Games
-requires: cygwin libgcc1 libggz2 libggzcore9
+requires: libgcc1 libggz2 libggzcore9
 external-source: ggz-client-libs
 sdesc: "GGZ Gaming Zone game client library (runtime)"
 ldesc: "This packages contains two libraries for the C programming 
